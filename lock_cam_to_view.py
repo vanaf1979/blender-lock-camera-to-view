@@ -27,7 +27,7 @@ class VIEW_3D_lock_camera_to_view(bpy.types.Operator):
             # Unlock camera from view,
             bpy.context.space_data.lock_camera = False
         else:
-            # Mover the view into the camera perspective.
+            # Move the view into the camera perspective.
             for area in bpy.context.screen.areas:
                 if area.type == 'VIEW_3D':
                     area.spaces[0].region_3d.view_perspective = 'CAMERA'
